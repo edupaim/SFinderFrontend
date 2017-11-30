@@ -1,9 +1,9 @@
 <template>
-    <div style="width: 100%;">
-        <v-container fill-height>
+    <div style="width: 100%">
+        <div class="content">
             AlunoX: Ola!<br>
             AlunoB: Oi!
-        </v-container>
+        </div>
         <v-text-field
                 class="typer"
                 label="Digite sua mensagem..."
@@ -23,4 +23,13 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    .content{
+        box-sizing: border-box;
+        height: calc(100vh - 180px);
+        overflow-y: auto;
+        padding: 10px;
+    }
+    v-text-field {
+        height: 100px;
+    }
 </style>
