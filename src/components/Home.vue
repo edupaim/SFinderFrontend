@@ -1,5 +1,5 @@
 <template>
-    <div app>
+    <div>
         <toolbar></toolbar>
         <v-content>
             <v-container fluid
@@ -12,7 +12,7 @@
                 </v-layout>
             </v-container>
         </v-content>
-        <v-footer app :fixed="true">
+        <v-footer fixed>
             <span>&copy; 2017</span>
         </v-footer>
     </div>
