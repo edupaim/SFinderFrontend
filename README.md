@@ -1,8 +1,8 @@
-# studies-finder
+# Studies Finder
 
-> Studies Finder
+> The front-end application project for studies interested in study a same subject
 
-## Build Setup
+## Front-end Application Build Setup
 
 ``` bash
 # install dependencies
