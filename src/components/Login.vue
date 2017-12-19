@@ -24,6 +24,7 @@
     name: 'Login',
     data () {
       return {
+        e1: null,
         valid: true,
         email: '',
         password: ''

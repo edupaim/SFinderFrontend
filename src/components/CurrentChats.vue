@@ -1,17 +1,26 @@
 <template>
-    <v-expansion-panel>
-        <v-expansion-panel-content v-for="(chat,i) in chats" :key="i">
-            <div slot="header">{{ chat.name }}</div>
-            <v-card class="grey darken-2" :to="'/chat/1'">
-                <v-card-text>Disciplina: {{ chat.discipline }}<br>
-                    Assunto: {{ chat.subject }}</v-card-text>
-            </v-card>
-        </v-expansion-panel-content>
-    </v-expansion-panel>
+    <v-flex xs12 sm10>
+        <v-card>
+            <v-subheader>Cequest chat</v-subheader>
+            <v-expansion-panel>
+                <v-expansion-panel-content v-for="(chat,i) in chats" :key="i">
+                    <div slot="header">{{ chat.name }}</div>
+                    <v-card class="grey darken-2" :to="'/chat/1'">
+                        <v-card-text>Disciplina: {{ chat.discipline }}<br>
+                            Assunto: {{ chat.subject }}
+                        </v-card-text>
+                    </v-card>
+                </v-expansion-panel-content>
+            </v-expansion-panel>
+        </v-card>
+    </v-flex>
 </template>
 
 <script>
+  import VContent from 'vuetify/es5/components/VGrid/VContent'
+
   export default {
+    components: {VContent},
     name: 'CurrentChats',
     data () {
       return {

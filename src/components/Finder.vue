@@ -36,7 +36,7 @@
                 </v-card-text>
             </v-card>
             <v-flex>
-                <v-btn @click="find" :to="'/studiesfound'">
+                <v-btn :to="'/studiesfound'">
                     interesse
                 </v-btn>
             </v-flex>

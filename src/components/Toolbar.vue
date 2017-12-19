@@ -23,7 +23,7 @@
                         <v-list-tile-title>Current chats</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile @click="">
+                <v-list-tile @click="" :to="'/requestChats'">
                     <v-list-tile-action>
                         <v-icon>move_to_inbox
                         </v-icon>
@@ -46,16 +46,12 @@
             <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
             <v-toolbar-title class="white--text">Studies Finder</v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-btn icon>
+            <v-btn icon :to="'/currentChats'">
                 <v-icon>chat
                 </v-icon>
             </v-btn>
-            <v-btn icon>
+            <v-btn icon :to="'/requestChats'">
                 <v-icon>move_to_inbox
-                </v-icon>
-            </v-btn>
-            <v-btn icon>
-                <v-icon>account_box
                 </v-icon>
             </v-btn>
             <v-btn icon>
@@ -72,6 +68,8 @@
       return {
         drawer: null
       }
+    },
+    methods: {
     }
   }
 </script>
