@@ -16,6 +16,7 @@
     </v-flex>
 </template>
 
+
 <script>
   import VContent from 'vuetify/es5/components/VGrid/VContent'
 
