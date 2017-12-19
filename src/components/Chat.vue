@@ -2,22 +2,28 @@
     <div style="width: 100%">
         <div class="content">
             <v-flex offset-xs1 xs7>
-                <v-chip color="primary" text-color="white">Boa tarde! Tudo na paz?</v-chip>
+                <v-chip color="primary" text-color="white">Mensagem</v-chip>
             </v-flex>
             <v-flex xs7 offset-xs4 class="text-lg-right">
-                <v-chip color="green" text-color="white">Eai, tudo sim, tirando essa final ai que to precisando tirar uns 7, hehehe. E contigo?</v-chip>
+                <v-chip color="green" text-color="white">Mensagem</v-chip>
             </v-flex>
             <v-flex offset-xs1 xs7>
-                <v-chip color="primary" text-color="white">Eitaa, to pra fazer uma subistitutiva de Calc A também, mas precisando de 4...</v-chip>
+                <v-chip color="primary" text-color="white">Mensagem</v-chip>
             </v-flex>
             <v-flex xs7 offset-xs4 class="text-lg-right">
-                <v-chip color="green" text-color="white">Vamos mandar ver então!</v-chip>
+                <v-chip color="green" text-color="white">Mensagem</v-chip>
             </v-flex>
             <v-flex offset-xs1 xs7>
-                <v-chip color="primary" text-color="white">Vamos sim, tem hangout?</v-chip>
+                <v-chip color="primary" text-color="white">Mensagem</v-chip>
             </v-flex>
             <v-flex xs7 offset-xs4 class="text-lg-right">
-                <v-chip color="green" text-color="white">Tenho, adiciona ai, fulano@gmail.com</v-chip>
+                <v-chip color="green" text-color="white">Mensagem</v-chip>
+            </v-flex>
+            <v-flex offset-xs1 xs7>
+                <v-chip color="primary" text-color="white">Mensagem</v-chip>
+            </v-flex>
+            <v-flex xs7 offset-xs4 class="text-lg-right">
+                <v-chip color="green" text-color="white">Mensagem</v-chip>
             </v-flex>
         </div>
         <v-text-field
