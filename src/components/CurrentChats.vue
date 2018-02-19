@@ -11,6 +11,13 @@
                         </v-card-text>
                     </v-card>
                 </v-expansion-panel-content>
+                <v-expansion-panel-content>
+                    <div slot="header">Jay Smith</div>
+                    <v-card class="red lighten-1">
+                        <v-card-text>Waiting response request.
+                        </v-card-text>
+                    </v-card>
+                </v-expansion-panel-content>
             </v-expansion-panel>
         </v-card>
     </v-flex>

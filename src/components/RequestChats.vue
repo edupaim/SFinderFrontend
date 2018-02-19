@@ -8,10 +8,10 @@
                         <v-list-tile-title v-html="item.name"></v-list-tile-title>
                     </v-list-tile-content>
                     <v-list-tile-action>
-                        <v-icon v-bind:color="green">thumb_up</v-icon>
+                        <v-btn outline fab small color="green"><v-icon v-bind:color="green">thumb_up</v-icon></v-btn>
                     </v-list-tile-action>
                     <v-list-tile-action>
-                    <v-icon v-bind:color="red">thumb_down</v-icon>
+                        <v-btn outline fab small color="red"><v-icon v-bind:color="red">thumb_down</v-icon></v-btn>
                     </v-list-tile-action>
                 </v-list-tile>
             </v-list>
