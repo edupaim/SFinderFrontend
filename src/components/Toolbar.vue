@@ -32,7 +32,7 @@
                         <v-list-tile-title>Requests</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile @click="">
+                <v-list-tile @click="" :to="'/userConfig'">
                     <v-list-tile-action>
                         <v-icon>account_box</v-icon>
                     </v-list-tile-action>

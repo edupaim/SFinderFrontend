@@ -47,10 +47,10 @@
         dialog: false,
         snackbar: false,
         studiesFound: [
-          {name: 'Jason Oner', icon: 'account_circle'},
-          {name: 'Ranee Carlson', icon: 'account_circle'},
-          {name: 'Cindy Baker', icon: 'account_circle'},
-          {name: 'Ali Connors', icon: 'account_circle'}
+          {name: 'Jason Oner', icon: 'account_circle', color: 'red'},
+          {name: 'Ranee Carlson', icon: 'account_circle', color: 'red'},
+          {name: 'Cindy Baker', icon: 'account_circle', color: 'red'},
+          {name: 'Ali Connors', icon: 'account_circle', color: 'red'}
         ]
       }
     }

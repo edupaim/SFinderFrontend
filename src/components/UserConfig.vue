@@ -1,13 +1,18 @@
 <template>
-    <v-container fluid>
-        <v-flex xs6 offset-xs3>
+    <v-flex xs12 sm10>
+        <v-form v-model="valid" ref="form" lazy-validation>
             <v-text-field
-                    label="Nome"
-                    v-model="nome"
+                    label="Name"
+                    v-model="name"
+                    :rules="nameRules"
+                    :counter="10"
+                    required
             ></v-text-field>
             <v-text-field
-                    label="Email"
+                    label="E-mail"
                     v-model="email"
+                    :rules="emailRules"
+                    required
             ></v-text-field>
             <v-text-field
                     name="input-10-1"
@@ -23,36 +28,20 @@
                     min="8"
                     counter
             ></v-text-field>
-                <v-btn
-                        @click="submit"
-                        :disabled="!valid"
-                        :to="'/home'"
-                >
-                    enviar
-                </v-btn>
-            <v-btn @click="clear">limpar</v-btn>
-        </v-flex>
-    </v-container>
+            <v-btn
+                    @click="submit"
+            >
+                enviar
+            </v-btn>
+        </v-form>
+    </v-flex>
 </template>
 
 <script>
   export default {
-    name: 'Cadastro',
+    name: 'UserConfig',
     data () {
-      return {
-        e1: false,
-        valid: true,
-        email: '',
-        nome: '',
-        password: ''
-      }
-    },
-    methods: {
-      submit () {
-      },
-      clear () {
-        this.$refs.form.reset()
-      }
+      return {}
     }
   }
 </script>

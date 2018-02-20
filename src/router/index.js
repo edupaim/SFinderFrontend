@@ -8,6 +8,7 @@ import StudiesFound from '@/components/StudiesFound'
 import CurrentChats from '@/components/CurrentChats'
 import RequestChats from '@/components/RequestChats'
 import Chat from '@/components/Chat'
+import UserConfig from '@/components/UserConfig'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ export default new Router({
       path: '/requestChats',
       name: 'RequestChats',
       component: RequestChats
+    },
+    {
+      path: '/userConfig',
+      name: 'UserConfig',
+      component: UserConfig
     }
   ]
 })
