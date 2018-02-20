@@ -32,7 +32,7 @@
     data () {
       return {
         chats: [
-          {name: 'Jason Oner'},
+          {name: 'Grupo: Jason Oner, Ranee Carlson, Cindy Baker'},
           {name: 'Ranee Carlson'},
           {name: 'Cindy Baker'},
           {name: 'Ali Connors'}
