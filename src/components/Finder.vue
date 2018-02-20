@@ -39,6 +39,38 @@
                 <v-btn :to="'/studiesfound'">
                     interesse
                 </v-btn>
+                <v-dialog v-model="dialog" persistent max-width="500">
+                    <v-btn slot="activator">Sugestao de Assunto</v-btn>
+                    <v-card>
+                        <v-card-title class="headline">Sugestão de assunto</v-card-title>
+                        <v-card-text>Selecione a disciplina e digite o assunto que sugere ser criado.</v-card-text>
+                        <v-flex xs10 offset-xs1>
+                        <v-select
+                                xs10
+                                v-bind:items="items"
+                                v-model="discipline"
+                                label="Selecione a disciplina"
+                                single-line
+                                auto
+                                append-icon="book"
+                                hide-details
+                                class="mb-3"
+                        ></v-select>
+                            <v-text-field
+                                    label="Assunto"
+                                    v-model="name"
+                                    :rules="nameRules"
+                                    :counter="45"
+                                    required
+                            ></v-text-field>
+                        </v-flex>
+                        <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn color="red darken-1" flat @click.native="dialog = false">Cancelar</v-btn>
+                            <v-btn color="green darken-1" flat @click.native="dialog = false">Enviar</v-btn>
+                        </v-card-actions>
+                    </v-card>
+                </v-dialog>
             </v-flex>
         </v-flex>
     </v-container>
@@ -49,6 +81,7 @@
     name: 'Finder',
     data () {
       return {
+        dialog: false,
         discipline: null,
         subject: null,
         items: [

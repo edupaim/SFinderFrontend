@@ -2,7 +2,7 @@
     <v-container fluid>
         <v-flex xs6 offset-xs3>
             <v-text-field
-                    label="Email"
+                    label="Matricula"
                     v-model="email"
             ></v-text-field>
                 <v-btn
