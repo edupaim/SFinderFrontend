@@ -2,36 +2,25 @@
     <v-container fluid>
         <v-flex xs6 offset-xs3>
             <v-text-field
-                    label="Nome"
-                    v-model="nome"
-            ></v-text-field>
-            <v-text-field
                     label="Email"
                     v-model="email"
             ></v-text-field>
-            <v-text-field
-                    name="input-10-1"
-                    label="Senha"
-                    v-model="password"
-                    min="8"
-                    counter
-            ></v-text-field>
-            <v-text-field
-                    name="input-10-1"
-                    label="Repita senha"
-                    v-model="password"
-                    min="8"
-                    counter
-            ></v-text-field>
                 <v-btn
-                        @click="submit"
+                        @click="snackbar = true"
                         :disabled="!valid"
-                        :to="'/home'"
                 >
                     enviar
                 </v-btn>
             <v-btn @click="clear">limpar</v-btn>
         </v-flex>
+        <v-snackbar
+                :timeout="5 * 1000"
+                :top="true"
+                v-model="snackbar"
+        >
+            Confirme o cadastro através do requisição enviado ao email.
+            <v-btn flat color="pink" @click.native="snackbar = false">Close</v-btn>
+        </v-snackbar>
     </v-container>
 </template>
 
@@ -44,7 +33,8 @@
         valid: true,
         email: '',
         nome: '',
-        password: ''
+        password: '',
+        snackbar: false
       }
     },
     methods: {

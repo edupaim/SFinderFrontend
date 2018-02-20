@@ -9,23 +9,17 @@
                     required
             ></v-text-field>
             <v-text-field
-                    label="E-mail"
-                    v-model="email"
-                    :rules="emailRules"
-                    required
-            ></v-text-field>
-            <v-text-field
                     name="input-10-1"
                     label="Senha"
-                    v-model="password"
                     min="8"
+                    :type="'password'"
                     counter
             ></v-text-field>
             <v-text-field
                     name="input-10-1"
                     label="Repita senha"
-                    v-model="password"
                     min="8"
+                    :type="'password'"
                     counter
             ></v-text-field>
             <v-btn
@@ -41,7 +35,11 @@
   export default {
     name: 'UserConfig',
     data () {
-      return {}
+      return {
+        email: 'email@example.com',
+        nome: 'User Fulano',
+        password: 'askdpokaopskd'
+      }
     }
   }
 </script>
